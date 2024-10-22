@@ -14,12 +14,34 @@ description = "Catholic Ebooks Store"
 readme = "readme.md"
 requires-python = ">=3.12"
 
+[tool.ruff]
+exclude = ["tests"]
+
 [tool.ruff.lint]
 select = [
     'ALL'
 ]
-ignore = [
 
+ignore = [
+    "A002",
+    "ARG002",
+    "ANN00",
+    "ANN201",
+    "D100",
+    "D101",
+    "D102",
+    "D104",
+    "D105",
+    "D107",
+    "D203",
+    "D205",
+    "D213",
+    "DTZ005",
+    "FBT001",
+    "FBT003",
+    "N805",
+    "RUF012",
+    "SIM117"
 ]
 
 [tool.pytest.ini_options]
