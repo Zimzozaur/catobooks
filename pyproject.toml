@@ -1,0 +1,26 @@
+[project]
+name = "catobooks"
+version = "0.0.0"
+authors = [
+    { name="Simon Piechutowski", email="szymonpiechutowski@gmail.com" },
+]
+dependencies = [
+    "litestar[standard]",
+    "ruff~=0.7.0",
+    "pre-commit~=4.0.1",
+    "pytest~=8.3.3",
+]
+description = "Catholic Ebooks Store"
+readme = "readme.md"
+requires-python = ">=3.12"
+
+[tool.ruff.lint]
+select = [
+    'ALL'
+]
+ignore = [
+
+]
+
+[tool.pytest.ini_options]
+python_files = "test_*.py"
